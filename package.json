@@ -1,0 +1,58 @@
+{
+  "name": "frontend-dev-assignment",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@storybook/addon-actions": "^5.3.19",
+    "axios": "^0.19.2",
+    "canned": "0.3.12",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "lodash": "^4.17.19",
+    "qs": "^6.9.4",
+    "react": "16.12.0",
+    "react-dom": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
+    "styled-components": "^5.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.7.4",
+    "@storybook/react": "5.2.6",
+    "babel-loader": "8.0.6",
+    "concurrently": "3.5.1",
+    "react-scripts": "3.2.0"
+  },
+  "scripts": {
+    "start": "concurrently \"react-scripts start\" \"canned -p 5000 ./api/\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/src/stories/"
+    ]
+  },
+  "proxy": "http://localhost:5000",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "resolutions": {
+    "styled-components": "^5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

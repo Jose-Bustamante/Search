@@ -1,0 +1,14 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <g fill-rule="nonzero">
+    <path d="M20 34c7.732 0 14-6.268 14-14S27.732 6 20 6 6 12.268 6 20s6.268 14 14 14zm0 5C9.507 39 1 30.493 1 20S9.507 1 20 1s19 8.507 19 19-8.507 19-19 19z" opacity=".2"/>
+    <path d="M8.046 27.293A13.924 13.924 0 0 1 6 20c0-6.926 5.03-12.678 11.636-13.801L20 1C9.507 1 1 9.507 1 20c0 4.782 1.767 9.151 4.683 12.49l2.363-5.197zm0 0A13.924 13.924 0 0 1 6 20c0-6.926 5.03-12.678 11.636-13.801L20 1C9.507 1 1 9.507 1 20c0 4.782 1.767 9.151 4.683 12.49l2.363-5.197z">
+      <animateTransform attributeType="xml"
+      attributeName="transform"
+      type="rotate"
+      from="0 20 20"
+      to="360 20 20"
+      dur="1s"
+      repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
