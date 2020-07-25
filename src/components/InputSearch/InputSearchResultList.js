@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import PropTypes from "prop-types";
 
 import { ResultsWrapper, ResultItem, StyledNumberResultSpan } from "./styles";
 
@@ -35,6 +36,12 @@ const InputSearchResultList = (props) => {
       })}
     </ResultsWrapper>
   );
+};
+InputSearchResultList.propTypes = {
+  searchTerm: PropTypes.string,
+  onSelectResult: PropTypes.func.isRequired,
+  maxHeight: PropTypes.number,
+  results: PropTypes.array,
 };
 
 InputSearchResultList.displayName = "InputSearchResultList";

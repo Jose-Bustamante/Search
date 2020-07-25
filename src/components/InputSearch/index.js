@@ -1,10 +1,8 @@
-// Global Imports
 import React, { useState, useEffect } from "react";
-// Assets
+import PropTypes from "prop-types";
 import { ReactComponent as Search } from "../../assets/search.svg";
 import { ReactComponent as CloseIcon } from "../../assets/close.svg";
 import { ReactComponent as LoadingIcon } from "../../assets/loading.svg";
-// Components
 import InputSearchResultList from "./InputSearchResultList";
 import Icon from "../Icon";
 import { StyledIconSection, StyledInput, StyledInputWrapper } from "./styles";
@@ -96,6 +94,20 @@ const InputSearch = (props) => {
       </StyledInputWrapper>
     </>
   );
+};
+
+InputSearch.propTypes = {
+  id: PropTypes.string,
+  placeholder: PropTypes.string,
+  error: PropTypes.bool,
+  isLoading: PropTypes.bool,
+  name: PropTypes.string,
+  onSelectResult: PropTypes.func.isRequired,
+  debounceTimeout: PropTypes.number,
+  maxResultsHeight: PropTypes.number,
+  minChars: PropTypes.number,
+  onSearch: PropTypes.func.isRequired,
+  searchResults: PropTypes.array,
 };
 
 InputSearch.displayName = "InputSearch";

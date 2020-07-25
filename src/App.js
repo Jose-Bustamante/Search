@@ -17,15 +17,10 @@ class App extends Component {
 
     return (
       <div>
-        <div>
-          <h2>Hello world</h2>
-        </div>
-        <p>
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
         <InputSearch
           onSearch={handleSearch}
           searchResults={this.state.searchResults}
+          onSelectResult={(value) => console.log("selected value -> ", value)}
         />
       </div>
     );
